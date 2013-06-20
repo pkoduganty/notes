@@ -1,0 +1,82 @@
+TEXT LEVEL
+1. Tokenization
+2. Spelling correction
+3. Sentence boundary detection
+4. POS Tagging
+5. Stemming, Lemmatization
+6. Acronym Expansion/disambiguation
+7. Synonym, Hypernym[weight=-log ancestory] Expansion
+8. Chunker
+9. Active/Passive Voice checks (??)
+9. NER (Pre-trained models-[Stanford, OpenNLP, Lingpipe], Gazettes/Vocab [NP, subj, obj], )
+10. Keyword Extraction (Domain independent, Vocab/Thesauri assisted, Trained/learned)
+11. Topic Modelling
+12. Summarization (Later)
+13. Metadata Extraction framework based on JAPE Rules(?)
+14. Annotating with LOD ontologies //Trained on annotated documents and upper ontology like schema.org
+
+DOCUMENT LEVEL
+1. Segmentation(?)
+2. Solr schema(dc,dcterms,schema.org), indexing
+3. Solr Analyzers
+4. Clustering
+5. Classification (multi-taxonomy)
+6. Topic Extraction
+7. Document Linking
+
+FRAMEWORKS
+1. ClearTK, Apache UIMA, UIMAfit, DKPro-
+2. Mallet, Mahout
+3. Hive - SKOS Vocab and Taxonomy Mgmt
+4. Apache Solr, Lucene
+5. Maui Indexer and KEA algorithm - Keyword Extraction
+
+
+
+
+Text Analysis Steps/Tools
+
+1. Download/Convert to Text file (utf-8, ascii)
+2. (voyant-tools.org) Raw Doc(s) statistics - length in chars, word count(tokens), line count, unique word count(types), vocabulary/lexical density (types/tokens)
+3. (voyant-tools.org) Word Statistics - TF, IDF, TF/IDF, 
+4. Stemmed Word Statistics - TF, IDF, TF/IDF,
+5. Phrase Statistics - Bigram, Trigram, NP, VP, PP = TF, IDF, TF/IDF, 
+6. Dependency Statistics - subj, obj, pred, statistics
+7. (mallet) Topic Models - LDA, HLDA
+8. (mallet) Clusters
+A
+
+
+
+Interesting Semantic Web Technologies
+Sindice - Semantic Indexing with Lucene
+SemMF (http://semmf.ag-nbi.de/doc/introduction.html) - Semantic Similarity Framework
+Ontologies, APIs - UMBEL, YAGO, DBPedia, FreeBase, Schema.org (SDK or RESTful integration capabilities)
+Ontology based Reasoners, Entailment - Cyc, 
+
+
+Cloud Text analytic platforms
+1. DiscoverText
+2. Alchemy
+3. Coginov
+4. Evri
+5. Open Calais
+6. DBPedia Spotlight
+
+
+Notes on Important Sentence / Term Extraction for Summarization
+1. Reference to Named Entity / Vocabulary Phrase
+2. Long sentences, Emphasis tags, Repeated(triples)?, 
+3. Active voice
+4. Multiple NSubj (DObj?)
+5. NSubj, important predictate (how do you figure that out? Frequency, Wordnet IC)
+6. Coref chains?? minimal indicates self contained information, maximal indicates tying together multiple sentences/topics together for summary...
+7. Sentences that indicate specifics vs general (generalization words like mostly, frequently) or vague (use of words like maybe, probably) information
+8. Sentences with possesives
+9. Term - 
+	Phrase structure
+	VP (length<5) - Head noun freq based significance
+	NP (length<5) with only DET, JJ, JJS, VB*, NN*, CC
+	
+	Dependency structure
+	

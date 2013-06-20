@@ -1,0 +1,56 @@
+Text Analysis Steps/Tools
+
+1. Download/Convert to Text file (utf-8, ascii)
+2. (voyant-tools.org) Raw Doc(s) statistics - length in chars, word count(tokens), line count, unique word count(types), vocabulary/lexical density (types/tokens)
+3. (voyant-tools.org) Word Statistics - TF, IDF, TF/IDF, 
+4. Stemmed Word Statistics - TF, IDF, TF/IDF,
+5. Phrase Statistics - Bigram, Trigram, NP, VP, PP = TF, IDF, TF/IDF, Mutual Information, Cohesion, Independence, CValue, Weirdness, Thesauri node depth, node degree
+6. Dependency Statistics - subj, obj, pred, statistics
+7. (mallet) Topic Models - LDA, HLDA
+8. (mallet) Clusters
+
+
+Interesting Semantic Web Technologies
+Sindice - Semantic Indexing with Lucene
+Hive - SKOS Vocab and Taxonomy Mgmt
+SemMF (http://semmf.ag-nbi.de/doc/introduction.html) - Semantic Similarity Framework
+Maui Indexer and KEA algorithm - Keyword Extraction
+Ontologies, APIs - UMBEL, YAGO, DBPedia, FreeBase, Schema.org (SDK or RESTful integration capabilities)
+Ontology based Reasoners, Entailment - Cyc, 
+
+
+Cloud Text analytic platforms
+1. DiscoverText
+2. Alchemy
+3. Coginov
+4. Evri
+5. Open Calais
+6. DBPedia Spotlight
+
+
+Notes on Important Sentence / Term Extraction for Summarization
+1. Reference to Named Entity / Vocabulary Phrase
+2. Long sentences, Emphasis tags, Repeated(triples)?, 
+3. Active voice
+4. Multiple NSubj (DObj?)
+5. NSubj, important predictate (how do you figure that out? Frequency, Wordnet IC)
+6. Coref chains?? minimal indicates self contained information, maximal indicates tying together multiple sentences/topics together for summary...
+7. Sentences that indicate specifics vs general (generalization words like mostly, frequently) or vague (use of words like maybe, probably) information
+8. Sentences with possesives
+9. Term - 
+	Phrase structure
+	VP (length<5) - Head noun freq based significance
+	NP (length<5) with only DET, JJ, JJS, VB*, NN*, CC
+	
+	Dependency structure
+
+
+NLP Tools
+1. Stanford CoreNLP
+2. ClearNLP
+3. Mate-Tools
+4. Lingpipe
+5. OpenNLP
+6. Berkeley Parser
+7. Malt Parser
+

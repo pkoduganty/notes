@@ -1,0 +1,23 @@
+Corpus analysis
+
+- Significant Words (TF, TFIDF, 
+- KWIC (Disambiguation)
+- Concordance
+- Log likelihood, Chi square
+- 
+
+Relationships
+Hierarchical - Whole/part, 
+Predicative
+Temporal
+Spatial
+
+
+Salience
+Topic
+Sentence
+NE
+Predicate
+Sentiment
+
+
